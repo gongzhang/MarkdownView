@@ -31,12 +31,12 @@ let package = Package(
                 .product(
                     name: "Highlightr",
                     package: "Highlightr",
-                    condition: .when(platforms: [.iOS, .macOS])
+                    condition: .when(platforms: [.iOS, .macCatalyst, .macOS])
                 ),
                 .product(
                     name: "LaTeXSwiftUI",
                     package: "LaTeXSwiftUI",
-                    condition: .when(platforms: [.iOS, .macOS])
+                    condition: .when(platforms: [.iOS, .macCatalyst, .macOS])
                 ),
             ],
             swiftSettings: [.swiftLanguageMode(.v6)]
